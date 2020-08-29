@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Countdown</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="input-fields">
+        <form class="input-fields__form">
+            <input type="date" class="form__date" required>
+            <input type="time" class="form__time" required>
+            <input type="text" class="form__input" placeholder="Enter the Event Name" required>
+            <button type="submit" class="form__submit">Make Event</button>
+        </form>
+    </div>
+
+    <div class="container">
+        <!-- <div class="timer">
+            <div class="timer__event">Something</div>
+            <div class="timer__data">
+                <div><span class="days" data-days></span>d</div>
+                <div><span class="hours"></span>h</div>
+                <div><span class="minutes"></span>m</div>
+                <div><span class="seconds"></span>s</div>
+            </div>
+            <button class="delete__btn">Delete Event</button>
+        </div>
+         -->
+
+
+    </div>
+    <template id="timer__template">
+        <div class="timer">
+            <div class="timer__event"></div>
+            <div class="timer__data">
+                <div><span class="days"></span>d</div>
+                <div><span class="hours"></span>h</div>
+                <div><span class="minutes"></span>m</div>
+                <div><span class="seconds"></span>s</div>
+            </div>
+            <button class="delete__btn">Delete Event</button>
+        </div>
+    </template>
+    <script src="script.js"></script>
+</body>
+
+</html>

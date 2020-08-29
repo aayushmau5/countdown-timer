@@ -1,0 +1,104 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Noto Sans JP", sans-serif;
+}
+
+body {
+  background-image: linear-gradient(
+    90deg,
+    rgba(57, 129, 236, 1) 0%,
+    rgba(0, 212, 255, 1) 100%
+  );
+  background-size: cover;
+  height: 100vh;
+}
+
+.input-fields {
+  max-width: 300px;
+  margin: 0 auto;
+  padding: 50px 0;
+}
+
+.input-fields__form {
+  display: flex;
+  flex-direction: column;
+}
+
+.input-fields__form > * {
+  margin: 10px 0;
+}
+
+.form__date,
+.form__time {
+  text-align: center;
+}
+
+.form__date,
+.form__input,
+.form__time {
+  border: 3px solid #eee;
+  padding: 5px 10px;
+  font-size: 24px;
+}
+
+.form__submit {
+  border: 2px solid #eee;
+  background-color: rgb(82, 71, 233);
+  color: white;
+  padding: 10px;
+  font-size: 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.form__submit:hover {
+  background-color: rgb(83, 63, 219);
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.timer__event {
+  color: gray;
+  font-size: 20px;
+  text-align: center;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #eee;
+}
+
+.timer {
+  margin: 0 auto 50px;
+  background-color: white;
+  width: 500px;
+
+  font-size: 40px;
+  padding: 20px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.4);
+}
+
+.timer__data {
+  padding-top: 10px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.delete__btn {
+  border: none;
+  background: transparent;
+  padding: 10px;
+  transition: all 0.3s;
+  cursor: pointer;
+  color: gray;
+  border: 1px solid #eee;
+}
+
+.delete__btn:hover {
+  color: black;
+  border-radius: 3px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
